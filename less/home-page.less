@@ -2,6 +2,13 @@ header {
   height: 80vh;
   margin: 0 16% 0 16%;
 
+  @media @mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+  }
+
   .fun-bus {
     width: 100%;
     border-top: 2px dashed @navigation-border;
@@ -10,7 +17,11 @@ header {
 
     h2 {
       padding-top: 4%;
-    }
+
+      @media @mobile {
+        font-size: 2.7rem;
+      }/*closes media query*/
+    }/*closes h2*/
   }/*closes fun-bus image*/
 }/*closes header*/
 
@@ -23,15 +34,30 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media @mobile {
+      flex-direction: column;
+      margin: 0%;
+     } /*closes media query*/
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+      width: 70%;
+      margin: 0 17% 3% 17%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media @mobile {
+        width: 62%;
+        margin-left: 18%;
+        padding-bottom: 5%;
+      }
 
       img {
         border-radius: 10px;
@@ -58,6 +84,10 @@ header {
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @mobile {
+      padding-top: 4%;
+    }
+
     img {
       border-radius: 10px;
     }
@@ -69,13 +99,29 @@ header {
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      flex-direction: column;
+      align-items: center;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
 
+      @media @mobile {
+        width: 65%;
+        margin: 5%;
+        margin-bottom: 0%;
+        padding-bottom: 5%;
+      }
+
       .btn {
         .sign-up {
         .custom-btn();
+
+        @media @mobile {
+          width: 100%;
+          } //closes media query
         } // closes sign-up button
       } //btn parent
     } // destination
