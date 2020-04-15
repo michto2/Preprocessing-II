@@ -9,10 +9,14 @@ header {
     height: 70vh;
   }
 
+.top-content {
+  border-bottom: 2px dashed @navigation-border;
+  border-top: 2px dashed @navigation-border;
+}
+
   .fun-bus {
     width: 100%;
-    border-top: 2px dashed @navigation-border;
-    border-bottom: 2px dashed @navigation-border;
+  
     padding: 2%;
 
     h2 {
@@ -126,4 +130,35 @@ header {
       } //btn parent
     } // destination
   } // content-pick
+
+  .package {
+    width: 40%;
+    background: white;
+    margin-bottom: 7%;
+    align-items: center;
+    margin-left: 30%;
+
+    label {
+      font-size: 1.5rem;
+    } /*closes label */
+
+    .submit-button {
+      .flex(row, center, center);
+      .submit {
+        .custom-btn();
+      } /*closes submit*/
+    } /*closes submit-button*/
+
+   input {
+     background:white;
+     width: 100%;
+     .flex(column,center,center);
+     padding: 1%;
+     border: 1px solid black;
+    margin: 1%;
+ 
+
+   } /*closes input form*/
+  } /*closes package */
+
 }// home
